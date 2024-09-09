@@ -1,10 +1,11 @@
 {
-  "name": "haltbar",
+  "name": "haltbar.test",
   "version": "1.0.0",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "nodemon src/index.js"
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js"
   },
   "keywords": [],
   "author": "",
@@ -13,7 +14,6 @@
   "dependencies": {
     "ejs": "^3.1.10",
     "express": "^4.19.2",
-    "firebase": "^10.13.1",
     "morgan": "^1.10.0"
   },
   "devDependencies": {
