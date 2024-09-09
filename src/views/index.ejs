@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <%- include('partials/head') %>
+    <%- include('partials/scripts') %>
+</head>
+<body>
+    <div style="display: flex;flex-direction: column;">
+    <!-- Page Content -->
+    <%- include('partials/navigation') %>
+        <header>
+            <h1 class="title_1">Haltbar</h1>
+            <h2 class="subtitle_1">Expertos en Climatizacion</h2>
+            <div class="botons">
+                <a class="nav-link" href="https://eshop.haltbarcalefaccion.com.ar/" target="_blank">
+                    <button class="btn" style="width: 120px;border-radius: 10px;background-color: #f83b3b;color: #fff;" >Shop</button>
+                </a>
+                <a class="contact" href="#contact">Contacto</a>
+            </div>
+        </header>
+
+    <!-- About Page -->
+        <div id="about">
+            <%- include('about') %>
+        </div>
+
+    <!-- Info Page -->
+        <div id="info">
+            <%- include('info') %>
+        </div>
+
+    <!-- Contact Page -->
+        <div id="contact">
+            <%- include('contact') %>
+        </div>
+    </div>
+</body>
+</html>
