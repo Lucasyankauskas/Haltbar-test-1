@@ -2,22 +2,23 @@
     <div class="form-container">
         <div>
             <h1 class="h1-form">Contacto</h1>
-            <form class="form-contact" autocomplete="off">
+            <form class="form-contact" autocomplete="off" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="<%= formkey %>">
                 <div class="form-group">
                     <label for="nombre">Nombre</label>
-                    <input type="text" class="form-control" id="name" placeholder="Nombre" required autocomplete="off">
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Nombre" required autocomplete="off">
                 </div>
                 <div class="form-group">
                     <label for="telefono">Teléfono</label>
-                    <input type="tel" class="form-control" id="phone" placeholder="Teléfono" required autocomplete="off">
+                    <input type="tel" name="phone" class="form-control" id="phone" placeholder="Teléfono" required autocomplete="off">
                 </div>
                 <div class="form-group">
                     <label for="email">Email</label>
-                    <input type="email" class="form-control" id="email" placeholder="Email" required autocomplete="off">
+                    <input type="email" name="email" class="form-control" id="email" placeholder="Email" required autocomplete="off">
                 </div>
                 <div class="form-group">
                     <label for="mensaje">Mensaje</label>
-                    <textarea class="text-area" id="message" rows="3" placeholder="Mensaje" required></textarea>
+                    <textarea class="text-area" name="message" id="message" rows="3" placeholder="Mensaje" required></textarea>
                 </div>
             <button type="submit" class="btn btn-success btn-block btn-css-form">Enviar</button>
             </form>
